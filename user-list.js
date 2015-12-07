@@ -44,7 +44,7 @@ module.exports = function(res, screen_name) {
           usersFinal.push(userObject);
         });
 
-        res.send(JSON.stringify(usersFinal));
+        res.render('index', { users: usersFinal });
       });
     });
   });
