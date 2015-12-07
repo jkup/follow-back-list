@@ -4,8 +4,8 @@ Find people you follow that do not follow you.
 
 ## Installation
 
-    git clone https://github.com/jkup/one-way-following.git
-    cd one-way-following
+    git clone https://github.com/jkup/follow-back-list.git
+    cd follow-back-list
 
 Then create a folder named config with a file inside called settings.js
 
