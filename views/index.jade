@@ -2,7 +2,7 @@ html
   head
     title Follow Back List
   body
-    h1 People that don't follow you back
-    ul
-      each user in users
-        li= user.name
+    h1 Enter your @handle here
+    form(action="list", method="POST")
+      input.form-control(type="text", name="name", placeholder="Example: @jack")
+      input.form-control(type="submit", value="Generate List")

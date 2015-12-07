@@ -1,15 +1,19 @@
-var express  = require('express');
-var userList = require('./user-list');
-var app      = express();
+var bodyParser = require('body-parser');
+var express    = require('express');
+var sanitize   = require('express-sanitizer');
+var userList   = require('./user-list');
+var app        = express();
 
 app.set('view engine', 'jade');
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(sanitize());
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.render('index');
 });
 
-app.get('/list/:screen_name', function (req, res) {
-  const screen_name = req.params.screen_name;
+app.post('/list', function (req, res) {
+  const screen_name = req.sanitize(req.body.name);
   const users = userList(res, screen_name);
 });
 

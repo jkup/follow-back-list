@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/jkup/follow-back-list#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
+    "express-sanitizer": "^1.0.1",
     "jade": "^1.11.0",
     "twitter": "^1.2.5"
   }
