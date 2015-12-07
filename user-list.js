@@ -1,7 +1,7 @@
 var Twitter  = require('twitter');
 var client   = require('./config/settings');
 
-module.exports = function(screen_name) {
+module.exports = function(res, screen_name) {
   var one_way_following = [];
   var usersFinal        = [];
 
@@ -44,7 +44,7 @@ module.exports = function(screen_name) {
           usersFinal.push(userObject);
         });
 
-        console.log(usersFinal);
+        res.send(JSON.stringify(usersFinal));
       });
     });
   });
