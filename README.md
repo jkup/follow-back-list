@@ -1,4 +1,4 @@
-# One Way Following
+# Follow back list
 
 Find people you follow that do not follow you.
 
@@ -25,3 +25,7 @@ Finally, paste this inside:
       });
 
     }
+
+Then just run:
+
+    node .
