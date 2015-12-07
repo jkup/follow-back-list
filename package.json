@@ -1,0 +1,24 @@
+{
+  "name": "one-way-following",
+  "version": "0.1.0",
+  "description": "Find people you follow that do not follow you",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkup/one-way-following.git"
+  },
+  "keywords": [
+    "twitter",
+    "follow",
+    "following"
+  ],
+  "author": "Jon Kuperman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkup/one-way-following/issues"
+  },
+  "homepage": "https://github.com/jkup/one-way-following#readme"
+}
