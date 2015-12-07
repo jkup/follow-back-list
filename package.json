@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jkup/one-way-following/issues"
   },
-  "homepage": "https://github.com/jkup/one-way-following#readme"
+  "homepage": "https://github.com/jkup/one-way-following#readme",
+  "dependencies": {
+    "twitter": "^1.2.5"
+  }
 }
