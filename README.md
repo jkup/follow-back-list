@@ -6,6 +6,8 @@ Find people you follow that do not follow you.
 
 A demo can be found at http://159.203.252.126:3000/
 
+![App Screenshot](screenshot.png)
+
 ## Installation
 
     git clone https://github.com/jkup/follow-back-list.git
