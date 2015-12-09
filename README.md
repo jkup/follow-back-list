@@ -20,16 +20,18 @@ Then create a folder named config with a file inside called settings.js
 
 Finally, paste this inside:
 
-    const Twitter = require('twitter');
+```javascript
+const Twitter = require('twitter');
 
-    const client = Twitter({
-    	consumer_key: '',
-    	consumer_secret: '',
-    	access_token_key: '',
-    	access_token_secret: ''
-    });
+const client = Twitter({
+	consumer_key: '',
+	consumer_secret: '',
+	access_token_key: '',
+	access_token_secret: ''
+});
 
-    module.exports = client;
+module.exports = client;
+```
 
 
 Then just run:
