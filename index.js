@@ -15,7 +15,9 @@ app.get('/', function (req, res) {
 
 app.post('/list', function (req, res) {
   const screen_name = req.sanitize(req.body.name);
-  const users = userList(res, screen_name);
+  const users = userList(screen_name, function(err, usernames) {
+    res.render('list', { users: usernames });
+  });
 });
 
 var server = app.listen(3000, function () {
